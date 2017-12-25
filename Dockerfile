@@ -1,6 +1,11 @@
 FROM		ubuntu:16.04
 MAINTAINER	jihuun.k@gmail.com
 
-RUN		apt-get -y -q update
-RUN		apt-get install -y -q git gcc vim cscope ctags wget
+# Install dependencies
+RUN		apt-get -y -q update \
+		&& apt-get install -y -q \
+		git gcc vim cscope exuberant-ctags wget make bc \
+		libncurses5-dev libssl-dev \
+		build-essential kernel-package fakeroot
+
 RUN		git clone https://github.com/scriptworld/cscope-filter
