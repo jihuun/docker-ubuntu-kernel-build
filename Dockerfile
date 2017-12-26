@@ -12,7 +12,7 @@ RUN		apt-get -y -q update \
 #		gccgo-4.7-arm-linux-gnueabi \
 		gcc-aarch64-linux-gnu \
 		u-boot-tools \
-		libelf-dev libelf-devel \
+		libelf-dev \
 		build-essential kernel-package fakeroot
 
 RUN		git clone https://github.com/scriptworld/cscope-filter
