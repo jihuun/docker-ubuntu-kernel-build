@@ -7,6 +7,7 @@ RUN		apt-get -y -q update \
 		git gcc vim cscope exuberant-ctags wget make \
 		bc bison flex grep gawk gperf gettext ccache xz-utils \
 		libncurses-dev libncurses5-dev libssl-dev \
+		mutt \
 #		binutils-arm-linux-gnueabihf \
 #		gcc-arm-linux-gnueabihf \
 #		gccgo-4.7-arm-linux-gnueabi \
